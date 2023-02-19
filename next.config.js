@@ -1,4 +1,10 @@
-const APP_ENV_TEST = process.env.APP_ENV_TEST
+const APP_ENV_TEST = process.env.APP_ENV_TEST;
+
+const kNextConfigCheckIfEnvIsDefined = true;
+
+if (kNextConfigCheckIfEnvIsDefined && !APP_ENV_TEST) {
+  throw new Error('APP_ENV_TEST is not defined');
+}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

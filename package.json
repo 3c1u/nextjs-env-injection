@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "cross-env APP_ENV_TEST=hello next dev --turbo",
+    "dev:turbo": "cross-env APP_ENV_TEST=hello next dev --turbo",
+    "dev": "cross-env APP_ENV_TEST=hello next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
