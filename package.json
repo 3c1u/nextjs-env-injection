@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "cross-env APP_ENV_TEST=hello next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -27,6 +27,7 @@
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.7",
+    "cross-env": "7.0.3",
     "eslint": "8.19.0",
     "eslint-config-next": "latest",
     "postcss": "^8.4.14",

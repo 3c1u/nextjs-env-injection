@@ -1,9 +1,14 @@
+const APP_ENV_TEST = process.env.APP_ENV_TEST
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   experimental: {
     // Required:
     appDir: true,
+  },
+  env: {
+    APP_ENV_TEST,
   },
 };
 
